@@ -1,0 +1,22 @@
+{
+  "name": "your-forgo-app-name",
+  "private": true,
+  "version": "0.0.1",
+  "description": "A template you can use to get started with Forgo",
+  "scripts": {
+    "start": "npx webpack serve",
+    "build": "npx webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Your Name",
+  "dependencies": {
+    "forgo": "^1.1.0"
+  },
+  "devDependencies": {
+    "esbuild-loader": "^2.10.0",
+    "html-webpack-plugin": "^4.5.1",
+    "webpack-cli": "^4.4.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
