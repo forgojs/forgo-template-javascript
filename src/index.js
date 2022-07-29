@@ -1,9 +1,9 @@
 import * as forgo from "forgo";
-import { mount } from "forgo";
+import { mount, Component } from "forgo";
 
-function App(initialProps) {
-  return {
-    render(props, args) {
+const App = (_initialProps) => {
+  return new Component({
+    render(_props, _component) {
       return (
         <div style={{ width: "400px", margin: "auto", textAlign: "center" }}>
           <h1>Forgo App</h1>
@@ -13,12 +13,12 @@ function App(initialProps) {
         </div>
       );
     },
-  };
-}
+  });
+};
 
-function Logo(initialProps) {
-  return {
-    render(props, args) {
+const Logo = (_initialProps) => {
+  return new Component({
+    render(props, _component) {
       return (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -41,8 +41,8 @@ function Logo(initialProps) {
         </svg>
       );
     },
-  };
-}
+  });
+};
 
 window.addEventListener("load", () => {
   mount(<App />, document.getElementById("root"));
